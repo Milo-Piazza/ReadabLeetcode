@@ -13,7 +13,7 @@ Note: this is identical to https://leetcode.com/problems/maximum-value-of-an-ord
 ## Solution
 
 We can solve this in one pass in O(n): 
-For each number `num` at index k assume we've tracked the maximum value of `(nums[i] - nums[j])` in `maxDiff` for all `i < j < k`. Then we can easily update the result using `num` and `maxDiff`. The only thing we need to do afterwards is update `maxDiff`. To do this, we need to keep track of the maximum element we've seen so far in `currMax`, in which case maxDiff is at least `currMax - num`.
+For each number `num` at index k assume we've tracked the maximum value of `(nums[i] - nums[j])` in `maxDiff` for all `i < j < k`. Then we can easily update the result using `num` and `maxDiff`. The only thing we need to do afterwards is update `maxDiff`. To do this, we need to keep track of the maximum element we've seen so far in `currMax`, in which case `maxDiff` is at least `currMax - num`.
 
 ## Code
 ```
