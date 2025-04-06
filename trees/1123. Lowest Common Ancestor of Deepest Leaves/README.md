@@ -18,7 +18,7 @@ We can solve this problem recursively as follows:
 
 So how can we efficiently know which subtree(s) contain a deepest leaf?
 
-We can preprocess the tree and compute the depth of each node, defined recursively as 1 if the node is a leaf and 1 + the maximum depth of all its subtrees otherwise. Then we know whichever subtree has the maximum depth must contain a deepest leaf.
+We can preprocess the tree and compute the depth of each node, defined recursively as 1 if the node is a leaf and 1 + the maximum depth of all its subtrees otherwise. Then we know whichever subtree has the maximum depth must contain a deepest leaf. (Note that this is a different definition of depth than the problem gives, but I think it makes more sense this way.)
 
 This comes out to a two-pass algorithm in $O(n)$.
 
